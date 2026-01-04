@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript variables</h1>
+    <p id="demo"></p>
+    <!-- ( using var variable) -->
+    <script>
+        var x = 10;
+        var y = 19;
+        var z = x + y;
+        document.getElementById('demo').innerHTML="the value of z : " +z;  //(output line) 
+    </script>
+   <!-- (using let variable) -->
+     <p id="demo1"></p>
+    <script>   
+        let a = 67;
+        let b = 69;
+        let c = a + b;
+        document.getElementById('demo1').innerHTML="the value of c:" +c; 
+    </script> 
+    <!-- (using const variable) -->
+     <p id="demo2"></p>
+    <script>  
+        const one = 17;
+        const two = 98;
+        const add = one+two;
+        document.getElementById('demo2').innerHTML="the value of add:" +add; 
+    </script> 
+    <p id="demo3"></p>
+    <script>
+        let name = "narendra";
+        let age = 19;
+        let det = name + age ;
+        document.getElementById('demo3').innerHTML="this is my name:"+det;
+    </script> 
+    <script>
+        const name1 = "narendra";
+        const age1 = 18;
+        console.log(name1);
+        console.log(age1);
+    </script>   
+    
+</body>
+</html>

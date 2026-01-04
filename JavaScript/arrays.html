@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Arrays Example:</h1>
+    <p id="demo"></p>
+    <!--<button onclick="myfunction()">Puss it</button>-->
+    <script> 
+        let movies = ["pushpa", "kalki", "GM", "salar"]
+        document.getElementById("demo").innerHTML=movies;
+    </script>
+    <!-- using array key word-->
+     <p id="demo1"></p>
+     <script>
+        let fruits=new Array("apple", "orange", "banana", "grap")
+        document.getElementById("demo1").innerHTML=fruits;
+     </script>
+     <!-- Acsesing the values-->
+    <p id="demo2"></p>
+    <script> 
+        let movie = ["pushpa", "kalki", "GM", "salar"];
+        document.getElementById("demo2").innerHTML=movie[2];
+        //document.getElementById("demo2").innerHTML=movie[1];
+    </script>
+    <!-- changing values:-->
+     <p id="demo3"></p>
+    <script> 
+        let movie1 = ["pushpa", "kalki", "GM", "salar"];
+        movie1[2] = "orange"
+        document.getElementById("demo3").innerHTML=movie1;
+    </script>
+    <p id="demo4"></p>
+    <button onclick="myfunction()">Puss it</button>
+    <script> 
+        let movies1 = ["pushpa", "kalki", "GM", "salar"]
+        document.getElementById("demo4").innerHTML=movies1;
+        function myfunction(){
+            movies1.push("pushap2");
+            document.getElementById("demo4").innerHTML=movies1;
+        }
+
+    </script>
+    
+</body>
+</html>

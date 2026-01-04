@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Examples</title>
+</head>
+<body>
+    <h1>Looping Wxamples: For, while, and do-while</h1>
+    <h2> 1. For Loop:</h2>
+    <ul id="forlooplist"></ul>
+
+    <h2>2. while loop:</h2>
+    <ul id="whilelooplist"></ul>
+
+    <h2>3. do-while loop:</h2>
+    <ul id="dowhilelooplist"></ul>
+    <script>
+        // 1. For loop
+        const forLoopList = document.getElementById("forlooplist");
+        for (let i = 1; i <= 10; i++) {
+            const li = document.createElement("li");
+            li.textContent = "For Loop:" + i;
+            forLoopList.appendChild(li);
+        }
+
+        //2. while loop
+        const whileLoopList = document.getElementById("whilelooplist");
+        let count = 1;
+        while (count <= 5) {
+            const li = document.createElement("li");
+            li.textContent = "While Loop:" + count;
+            whileLoopList.appendChild(li);
+            count++;
+        }
+
+        //3. Do-While Loop
+        const doWhileLoopList = document.getElementById("dowhilelooplist");
+        let doCount = 1;
+        do {
+            const li = document.createElement("li");
+            li.textContent = "Do-While Loop:" + doCount;
+            doWhileLoopList.appendChild(li);
+            doCount++;
+        } while (doCount <= 5);
+
+    </script>
+    
+</body>
+</html>

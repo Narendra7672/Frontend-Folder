@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+</head>
+<body>
+    <h1> JavaScript Data Types Examples:</h1>
+    <dev id="output"></dev>
+    <script>
+        // Primitive data types:
+
+        let number = 65;       //number
+        let name = 'remo';     //string
+        let isAction = true;   //boolean
+        let unknown = null;    // null
+        let notDefined;        // undefind
+
+        // object data types:
+        let person = {
+            name: 'remo',         //object
+            age: 32
+        };
+        let colors = ['red', 'green', 'yellow']; // Array (which is a type of object)
+
+        // Displaying output in the HTML div
+
+        let output = document.getElementById('output');
+
+        // output example of different data types
+
+        output.innerHTML =`
+        <p>Number: ${number} </p>
+        <p>string: ${name} </p>
+        <p>Boolean: ${isAction} </p>
+        <p>Null: ${unknown} </p>
+        <p>Undefind: ${notDefined} </p>
+        <p>person object: ${person.name} </p>
+        <p>Array: ${colors[2]} </p>
+        `;
+          
+         
+    </script>
+    
+</body>
+</html>

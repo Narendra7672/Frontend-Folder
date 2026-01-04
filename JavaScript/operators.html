@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <h1>JavaScript operators examples:</h1>
+    <p id="output"></p>
+    <script>
+        let result="";
+        // arthmetic operator:
+        let a = 65, b = 87;
+        result += 'addition:'+(a+b)+'<br>';
+        result += 'substraction:'+(a-b)+'<br>';
+        result += 'multiplication:'+(a*b)+'<br>';
+        result += 'division:'+(a/b)+'<br>';
+        result += 'modules:'+(a%b)+'<br>';
+        result += 'incriment:'+(a++)+'<br>';
+        result += 'dicriment:'+(a--)+'<br>';
+        // comparision operator:
+        let num1 = 65, num2 = 76;
+        result += "num1==num2:" +(num1==num2)+ "<br>";
+        result += "num1!=num2:" +(num11=num2)+ "<br>";
+        result += "num1===num2:" +(num1===num2)+ "<br>";
+        result += "num1!==num2:" +(num1!==num2)+ "<br>";
+        result += "num1>num2:" +(num1>num2)+ "<br>";
+        result += "num1<num2:" +(num1<num2)+ "<br>";
+        result += "num1<=num2:" +(num1<=num2)+ "<br>";
+        result += "num1>=num2:" +(num1>=num2)+ "<br>";
+
+        // logical operator:
+        let x = true, y = false;
+        result += "AND" +(x&&y)+ "<br>;"
+        result += "OR" +(x||y)+ "<br>;"
+        result += "NOT" +(!y)+ "<br>;"
+
+        document.getElementById('output').innerHTML=result;
+        
+    </script>
+    
+</body>
+</html>
