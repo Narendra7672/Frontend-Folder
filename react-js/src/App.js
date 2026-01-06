@@ -10,12 +10,29 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
+import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
+import FregmentDemo from './FregmentDemo';
 
 function App() {
   return (
     <div className="App">
+      <FregmentDemo />
+      {/*<LifecycleA />
+      <Form/>
+      
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      <Inline />
+      <StyleSheet primary={true} />
+      <NameList/>
       <UserGreeting/>
-      {/*<Greet name="chandu" city="delhi"/>
+      <Greet name="chandu" city="delhi"/>
       <Greet1 name="sai" city="hyderabad"/>
       <FunctionClick/>
       <ClassClick/>
