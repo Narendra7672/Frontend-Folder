@@ -18,12 +18,42 @@ import styles from './appStyles.module.css';
 import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import FregmentDemo from './FregmentDemo';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
   return (
     <div className="App">
+      <PostForm/>
+      {/*
+      <PostList />
+      <UserProvider value='Python life'>
+        <ComponentC/>
+      </UserProvider>
+      <ClickCounterTwo />
+      <HoverCounterTwo />
+      <HoverCounter/>
+      <ClickCounter/>
+      <PortalDemo />
+      <FRParentInput />
+      <FocusInput />
+      <RefsDemo />
+      <ParentComp />
+      <PureComp />
       <FregmentDemo />
-      {/*<LifecycleA />
+      <LifecycleA />
       <Form/>
       
       <h1 className='error'>Error</h1>
